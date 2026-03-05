@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larissa Oliveira · Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <div>
+          <h1 class="site-title">LARISSA OLIVEIRA</h1>
+          <p class="site-subtitle">
+            building at the intersection of business, technology and design
+          </p>
+        </div>
+        <nav class="top-nav">
+          <button class="tab-button active" data-tab="about-me">about me</button>
+          <button class="tab-button" data-tab="startup-projects">
+            projects
+          </button>
+          <button class="tab-button" data-tab="creative-work">
+            creative work
+          </button>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <!-- STARTUP PROJECTS -->
+        <section
+          id="startup-projects"
+          class="tab-section"
+          aria-label="Startup projects"
+        >
+          <div class="cards-grid">
+            <article
+              class="project-card"
+              data-project-id="faca-parte"
+              tabindex="0"
+            >
+              <div class="project-card-media project-card-media--light">
+                <img src="imgs/facalogo.png" class="project-logo" alt="Faça Parte" />
+                <h2>FAÇA PARTE</h2>
+              </div>
+              <div class="project-card-meta">
+                <span class="pill">social impact</span>
+                <span class="pill">non‑profit</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-id="gait" tabindex="0">
+              <div class="project-card-media project-card-media--light">
+                <img src="imgs/gait.png" class="project-logo" alt="Gait" />
+                <h2>GAIT</h2>
+              </div>
+              <div class="project-card-meta">
+                <span class="pill">healthtech</span>
+                <span class="pill">product design</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-id="rumo" tabindex="0">
+              <div class="project-card-media project-card-media--light">
+                <a href="https://findrumo.com" target="_blank" rel="noopener" class="project-card-media-link" onclick="event.stopPropagation()">
+                  <img src="imgs/rumo.png" class="project-logo" alt="Rumo" />
+                </a>
+                <h2>RUMO</h2>
+              </div>
+              <div class="project-card-meta">
+                <span class="pill">edtech</span>
+                <span class="pill">product</span>
+              </div>
+            </article>
+
+            
+            <article class="project-card" data-project-id="brasa" tabindex="0">
+              <div class="project-card-media project-card-media--light">
+                <a href="https://brasausc.com" target="_blank" rel="noopener" class="project-card-media-link" onclick="event.stopPropagation()">
+                  <img src="imgs/brasaweb.png" class="project-logo" alt="BRASA USC" />
+                </a>
+                </a>
+                <h2>BRASA WEBPAGE</h2>
+              </div>
+              <div class="project-card-meta">
+                <span class="pill">UI</span>
+                <span class="pill">UX</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CREATIVE WORK -->
+        <section id="creative-work" class="tab-section" aria-label="Creative work">
+         
+          <div id="creative-work-grid" class="cards-grid cards-grid--creative">
+            <!-- Cards injected via script from creativeWork data -->
+          </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about-me" class="tab-section tab-section--active" aria-label="About me">
+          <div class="about-layout">
+            <section class="about-hero-card">
+              <div class="about-hero-content">
+                <img src="imgs/lari.png" class="avatar-circle" alt="Larissa">
+                <div>
+                  <h2>Hello!</h2>
+                  <p class="about-location">
+                    Los Angeles / São Paulo · USC – B.S. Arts, Technology and the
+                    Business of Innovation
+                  </p>
+                  <p class="about-body">
+                    I was born and raised in Brazil and am currently based in Los
+                    Angeles. I’m a sophomore at <a href="https://www.youtube.com/watch?v=1C3O4SC7AA8" target="_blank" rel="noopener">USC's Iovine and Young Academy</a>, where I get to explore innovation at the 
+                    intersection of technology, design, and business — a space that feels like home to someone who’s never fit into just one lane.
+                  </p>
+                  <p class="about-body">
+                    I’m naturally curious and slightly obsessed with understanding how things work. I’m energized by building across disciplines, whether that means thinking through a 
+                    startup’s business model, prototyping a new product idea, or designing something that makes technology feel more human.
+
+                    Growing up between cultures has shaped how I see the world: I care deeply about impact in Brazil, but I’m inspired by global thinking. I’m constantly asking how innovation can move from being impressive to being meaningful.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="about-columns">
+              <div class="about-column">
+                <h3>My Experience</h3>
+              <p class="about-resume-link"><a href="https://drive.google.com/file/d/1o45AmgtqrJzkI6SirF3MK5DLP4-x20mA/view?usp=sharing" target="_blank" rel="noopener">resume</a> <span class="about-resume-icon" aria-hidden="true">↗</span></p>
+                <ul class="chip-list">
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/microsoft.png" class="chip-logo" alt="Microsoft">
+                      <div>
+                        <div class="chip-title">Microsoft</div>
+                        <div class="chip-subtitle">Startup Scout · Jan 2026 – Present</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/jbs.png" class="chip-logo" alt="JBS">
+                      <div>
+                        <div class="chip-title">JBS</div>
+                        <div class="chip-subtitle">
+                          M&amp;A and DCM Summer Intern · Jun 2025 – Aug 2025
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="about-column">
+                <h3>Leadership &amp; Involvement</h3>
+                <ul class="chip-list">
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/sep.png" class="chip-logo" alt="SEP">
+                      <div>
+                        <div class="chip-title">SEP at USC</div>
+                        <div class="chip-subtitle">Active Member · Aug 2025 – Present</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/gero.png" class="chip-logo" alt="GeroTech">
+                      <div>
+                        <div class="chip-title">GeroTech SC</div>
+                        <div class="chip-subtitle">President · Nov 2024 – Present</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/brasa.png" class="chip-logo" alt="BRASA USC">
+                      <div>
+                        <div class="chip-title">BRASA USC</div>
+                        <div class="chip-subtitle">Marketing Manager · Aug 2025 – Present</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="chip">
+                      <img src="imgs/fof.png" class="chip-logo" alt="Fight On Founders">
+                      <div>
+                        <div class="chip-title">Fight On Founders</div>
+                        <div class="chip-subtitle">Advisor &amp; E-board Member · Nov 2024 – Present</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="about-sports">
+              <h3>Sports Background</h3>
+              <div class="about-sports-gallery">
+                <img src="imgs/swim.png" alt="Swimming">
+                <img src="imgs/medal.png" alt="Medal">
+                <img src="imgs/run.png" alt="Running">
+                <img src="imgs/half.png" alt="Half marathon">
+              </div>
+              <div class="about-sports-bullets">
+                <ul class="about-sports-col">
+                  <li>Competitive swimmer for 10+ years</li>
+                  <li>Represented the largest sport club in LATAM</li>
+                  <li>Multi national and state medalist</li>
+                </ul>
+                <ul class="about-sports-col">
+                  <li>Started running after retiring from swimming</li>
+                  <li>Ran 3 half marathons in the past year</li>
+                  <li>Currently training for a sub 2-hour half</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="about-books">
+              <h3>My Book Shelf</h3>
+              <div class="about-books-scroll">
+                <img src="imgs/atomic.png" alt="Atomic Habits">
+                <img src="imgs/gone.png" alt="Gone Girl">
+                <img src="imgs/murakami.png" alt="What I Talk About When I Talk About Running">
+                <img src="imgs/littlebook.png" alt="The Little Book That Still Beats the Market">
+                <img src="imgs/silent.png" alt="The Silent Patient">
+                <img src="imgs/carrie.png" alt="Carrie">
+                <img src="imgs/thehate.png" alt="The Hate U Give">
+                <img src="imgs/mebefore.png" alt="Me Before You">
+                <img src="imgs/mindset.png" alt="Mindset">
+                <img src="imgs/middle.jpg" alt="Middletide">
+                <img src="imgs/crawdads.png" alt="Where the Crawdads Sing">
+                <img src="imgs/daisy.jpg" alt="Daisy Jones and the Six">
+                <img src="imgs/np.png" alt="Normal People">
+                <img src="imgs/turt.jpg" alt="Turtles All the Way Down">
+                <img src="imgs/evelyn.jpg" alt="Turtles All the Way Down">
+             
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <div class="footer-left">
+            <a href="#about-me"><span>about me</span></a>
+            <a href="#startup-projects"><span>projects</span></a>
+            <a href="#creative-work"><span>creative work</span></a>
+          </div>
+          <div class="footer-right">
+            <span>Let’s connect!</span>
+            <a href="mailto:abujamra@usc.edu">abujamra@usc.edu</a>
+            <a href="https://linkedin.com/in/larissa-oliveira2005" target="_blank"
+              >linkedin.com/in/larissa-oliveira2005</a
+            >
+          </div>
+        </footer>
+      </main>
+
+      <!-- PROJECT MODAL -->
+      <div class="modal-backdrop" data-modal-backdrop hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="modal-close" data-modal-close aria-label="Close project">
+            ×
+          </button>
+          <div class="modal-scroll">
+            <header class="modal-header">
+              <h2 id="modal-title" class="modal-title"></h2>
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <span class="label">Timeline</span>
+                  <span class="value" data-modal-timeline></span>
+                </div>
+                <div class="modal-meta-item">
+                  <span class="label">Role</span>
+                  <span class="value" data-modal-role></span>
+                </div>
+              </div>
+            </header>
+            <section class="modal-body">
+              <div data-modal-body>
+                <!-- project content injected via JS -->
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
